@@ -40,11 +40,9 @@ class KDTcore extends GebSpec{
 					textContains = ""
 				}
 
-//				waitFor{ $(cssSelector, indexOrRange.toInteger(), text: contains(textContains)).isDisplayed() }
-
 				switch(keyword){
 					case INPUT:
-						println i + "行目:" + "INPUT:"
+						println i + "行目:" + "INPUT"
 						$(cssSelector, indexOrRange.toInteger(), text: contains(textContains)).value(cellValue)
 						break
 					case CLICK:
